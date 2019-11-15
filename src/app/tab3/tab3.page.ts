@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  private test: Subject<boolean> = new Subject();
 
-  constructor() {}
+  constructor() {
+  }
 
 }
